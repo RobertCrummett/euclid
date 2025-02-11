@@ -1,0 +1,52 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+%%BeginProlog
+/Times-Roman findfont 3 scalefont setfont
+%%EndProlog
+36 90 moveto (Chapter 1, Proposition 5) show
+
+0.1 setlinewidth
+1 setlinejoin
+
+% ABC
+newpath
+50 70 moveto
+-70 cos 30 mul dup -70 sin 30 mul rlineto
+neg 2 mul 0 rlineto
+closepath
+stroke
+
+% AE
+newpath
+50 70 moveto
+-70 cos 50 mul -70 sin 50 mul rlineto
+gsave 0 -3 rmoveto (E) show grestore
+stroke
+
+% AD
+newpath
+50 70 moveto
+-110 cos 50 mul -110 sin 50 mul rlineto
+gsave -1.5 -3 rmoveto (D) show grestore
+stroke
+
+% CF
+newpath
+-110 cos 40 mul 50 add -110 sin 40 mul 70 add moveto
+gsave -2.5 -1 rmoveto (F) show grestore
+ -70 cos 30 mul 50 add  -70 sin 30 mul 70 add lineto
+stroke
+
+% GB
+newpath
+ -70 cos 40 mul 50 add  -70 sin 40 mul 70 add moveto
+gsave 1 -1 rmoveto (G) show grestore
+-110 cos 30 mul 50 add -110 sin 30 mul 70 add lineto
+stroke
+
+49 71 moveto (A) show
+-110 cos 30 mul 47 add -110 sin 30 mul 69 add moveto (B) show
+ -70 cos 30 mul 51 add  -70 sin 30 mul 69 add moveto (C) show
+
+showpage
+%%EOF

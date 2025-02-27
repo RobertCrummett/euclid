@@ -13,9 +13,17 @@
 	pA pop pC pop add 2 div
 	pA exch pop pC exch pop add 2 div
 } def
+/distance {
+	exch 4 1 roll
+	sub 3 1 roll sub
+	dup mul exch dup mul add sqrt
+} def
 /pF {
-	% TODO: Make DEF an equilateral triangle with respect to side length DE
-	pA 55 sub
+	pD pE distance dup 2 div % DE DE/2
+	exch dup mul exch dup mul sub sqrt %
+	pA pop
+	pD exch pop
+	3 -1 roll sub
 } def
 %%EndProlog
 36 90 moveto (Chapter 1, Proposition 9) show

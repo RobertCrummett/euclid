@@ -1,0 +1,47 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+%%BeginProlog
+/Times-Roman findfont 3 scalefont setfont
+/pA {50 80} def
+/pB {20 15} def
+/pC {80 15} def
+/pD {
+	pA pop pB pop add 2 div
+	pA exch pop pB exch pop add 2 div
+} def
+/pE {
+	pA pop pC pop add 2 div
+	pA exch pop pC exch pop add 2 div
+} def
+/pF {
+	% TODO: Make DEF an equilateral triangle with respect to side length DE
+	pA 55 sub
+} def
+%%EndProlog
+36 90 moveto (Chapter 1, Proposition 9) show
+
+0.1 setlinewidth
+1 setlinejoin
+
+newpath
+pB moveto
+pA lineto
+pC lineto
+pD moveto
+pE lineto
+pF lineto
+closepath
+pA moveto
+pF lineto
+stroke
+
+pA exch 1 sub exch 1 add moveto (A) show
+pB exch 1 sub exch 3 sub moveto (B) show
+pC exch 1 sub exch 3 sub moveto (C) show
+pD exch 4 sub exch 1 sub moveto (D) show
+pE exch 2 add exch 1 sub moveto (E) show
+pF exch 1 sub exch 3 sub moveto (F) show
+
+showpage
+%%EOF
+

@@ -1,0 +1,33 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+%%BeginProlog
+/Times-Roman findfont 3 scalefont setfont
+/pA {20 20} def
+/pB {80 20} def
+/pC {50 80} def
+/pD {
+	pA exch pB pop add 2 div exch
+} def
+%%EndProlog
+36 90 moveto (Chapter 1, Proposition 10) show
+
+0.1 setlinewidth
+1 setlinejoin
+
+newpath
+pA moveto
+pB lineto
+pC lineto
+closepath
+pD moveto
+pC lineto
+stroke
+
+pA 1 sub exch 3 sub exch moveto (A) show
+pB 1 sub exch 1 add exch moveto (B) show
+pC 1 add exch 1 sub exch moveto (C) show
+pD 3 sub exch 1 sub exch moveto (D) show
+
+showpage
+%%EOF
+
